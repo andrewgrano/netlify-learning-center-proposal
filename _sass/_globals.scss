@@ -7,18 +7,60 @@ body {
     position: relative;
     font-size:  1.8rem;
     font-family: $defaultFont;
-    color: $gray;
 }
 
 a {
-    color: $gray;
+  color: #077703;
+
+  &:hover {
+    color: #0a6207;
+  }
+}
+
+p,
+ul {
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-bottom: 1rem;
 }
 
 section {
   padding-bottom: 10rem;
+  border-bottom: 1px solid $green;
+  margin-bottom: 10rem;
+
+  &:last-child {
+    border-bottom: 0 none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $displayFont;
   font-weight: bold;
+  color: $gray;
+}
+
+h1 {
+    font-size: 4.2rem;
+    margin-bottom: 2.5rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 3.8rem;
+    }
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
 }
