@@ -27,9 +27,9 @@ li {
 }
 
 section {
+  padding-top: 10rem;
   padding-bottom: 10rem;
   border-bottom: 1px solid $green;
-  margin-bottom: 10rem;
 
   &:last-child {
     border-bottom: 0 none;

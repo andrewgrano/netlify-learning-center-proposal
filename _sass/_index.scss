@@ -75,27 +75,29 @@
 .about {
     &__images {
         margin-top: 7rem;
-        text-align: center;
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
 
         img {
-            width: 28%;
-            margin-right: 1%;
+            width: 48%;
+            margin-right: 2%;
             box-shadow: 1rem 1rem 0 0 $green;
+
+            &:last-child {
+                margin-right: 0;
+            }
 
             @include media-breakpoint-down(md) {
                 width: 95%;
                 margin-bottom: 1.8rem;
                 box-shadow: 0 0 0 1rem $green;
+                margin-right: 0;
             }
 
             @include media-breakpoint-down(sm) {
                 width: 90%;
-            }
-
-            @include media-breakpoint-up(lg) {
-                &:nth-child(2) {
-                    width: 38%;
-                }
             }
         }
     }
